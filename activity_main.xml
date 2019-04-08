@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+  <LinearLayout
+      android:id="@+id/ll1"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal">
+      <TextView
+          android:textColor="@color/colorPrimaryDark"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Name:"
+          android:textStyle="bold"
+          android:textSize="25sp"
+          />
+      <EditText
+          android:id="@+id/et1"
+          android:layout_marginLeft="20sp"
+          android:layout_width="300sp"
+          android:hint="Enter Name"
+          android:inputType="text"
+          android:layout_height="wrap_content" />
+  </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll2"
+        android:layout_below="@+id/ll1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Age:"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            />
+        <EditText
+            android:id="@+id/et2"
+            android:layout_marginLeft="20sp"
+            android:hint="Enter Age"
+            android:inputType="number"
+            android:layout_width="300sp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll3"
+        android:layout_below="@+id/ll2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email:"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            />
+        <EditText
+            android:id="@+id/et3"
+            android:layout_marginLeft="20sp"
+            android:layout_width="300sp"
+            android:hint="Enter Email Address"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll4"
+        android:layout_below="@+id/ll3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Phone:"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            />
+        <EditText
+            android:id="@+id/et4"
+            android:layout_marginLeft="20sp"
+            android:layout_width="300sp"
+            android:hint="Enter phone No."
+            android:inputType="phone"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <TextView
+        android:layout_below="@+id/ll4"
+        android:id="@+id/tv1"
+       android:text="Select Your Image"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:clickable="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10sp"
+        android:src="@drawable/ic_launcher_background"
+        android:layout_below="@+id/tv1"
+        android:id="@+id/iv"/>
+    <Button
+        android:layout_below="@+id/iv"
+        android:id="@+id/bt"
+        android:text="SUBMIT"
+        android:textSize="25sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"/>
+
+
+</RelativeLayout>
